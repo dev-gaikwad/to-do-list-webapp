@@ -13,7 +13,7 @@ function addItemClickHandler(){
 
     if (userInput === ""){
         alert("Task cannot be empty!");
-    
+        return false;
     }
     inputItem.value = "";
     addTask( userInput );
@@ -25,10 +25,9 @@ function addTask ( newItem ){
     localStorage.setItem("task", newItem);
 
     let node = document.createElement("li");
-    node.innerHTML = `<input class="checkbox" type="checkbox">`
-    var textNode = document.createTextNode(newItem);
-    node.appendChild(textNode);
-    console.log(node);
+    node.innerHTML = `<label><input type="checkbox" class="checkbox"><span>${newItem}</span></label>`
+    // var textNode = document.createTextNode(newItem);
+    // node.appendChild(textNode);
     document.getElementById("output-list").appendChild(node);
 
 
