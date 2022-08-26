@@ -1,0 +1,44 @@
+:root {
+    --primary-color : #49D292;
+    --secondary-color : #E8F79A;
+    --primary-text-color : black;
+    --secondary-text-color : white;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+#item-input {
+    max-width: 200px;
+    height: 2rem;
+    padding: 0.5rem;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+
+#add-item-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+}
+
+#clear-list-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+}
+
+.checkbox {
+    margin-right: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
