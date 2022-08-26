@@ -66,3 +66,9 @@ li {
     margin: auto;
     padding: 1rem;
 }
+
+#delete-btn {
+    float : right;
+    background-color: tomato;
+    color: white;
+}
