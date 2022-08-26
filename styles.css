@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+body{
+    box-sizing: border-box;
+}
+
 :root {
+    font-family: 'Mukta', sans-serif;
+
     --primary-color : #49D292;
     --secondary-color : #E8F79A;
     --primary-text-color : black;
@@ -12,6 +20,15 @@
     text-align: center;
 }
 
+li {
+    list-style: none;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--primary-color);
+    border-radius: 1rem;
+}
+
+
 #item-input {
     max-width: 200px;
     height: 2rem;
@@ -21,7 +38,8 @@
     border-radius: 2rem;
 }
 
-#add-item-btn {
+.btn {
+    position: relative;
     background-color: var(--primary-color);
     color: var(--secondary-text-color);
     padding: 0.5rem;
@@ -29,16 +47,22 @@
     border-radius: 1rem;
 }
 
-#clear-list-btn {
-    background-color: var(--primary-color);
-    color: var(--secondary-text-color);
-    padding: 0.5rem;
-    border: 1px solid var(--primary-color);
-    border-radius: 1rem;
+.btn:hover {
+    font-weight: bold;
 }
 
 .checkbox {
     margin-right: 1rem;
     height: 1rem;
     width: 1rem;
+    background-color: var(--primary-color);
+}
+.checkbox:checked + span{
+    text-decoration: line-through;
+}
+
+.output-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
 }
